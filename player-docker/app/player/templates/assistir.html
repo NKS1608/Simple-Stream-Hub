@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <link href="{{url_for('static', filename='css/assistir.css')}}" rel="stylesheet" />
+    <title>Video Player</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="{{url_for('static', filename='img/logo.png')}}">
+    </header>
+    <section class="grid">
+        <iframe src="{{link}}" frameborder="0" allowfullscreen></iframe>
+        <div class="sidebar">
+            <div>
+            </div>
+        </div>
+        <h2 class="title">{{title}}</h2>
+    </section>
+</body>
+
+</html>
